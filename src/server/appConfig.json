@@ -1,6 +1,6 @@
 {
     "flair.app": {
-        "app": "myapp.main.App",
+        "app": "myservices.main.App",
 
         "boot": {
             "files": [

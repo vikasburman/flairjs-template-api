@@ -1,15 +1,15 @@
 {
-    "name": "yourapp",
-    "title": "yourapp name",
-    "description": "yourapp description",
-    "copyright": "yourapp copyright",
-    "version": "0.9.7",
-    "author": "yourapp author <yourapp@yourhost.domain>",
+    "name": "yourservice",
+    "title": "yourservice name",
+    "description": "yourservice description",
+    "copyright": "yourservice copyright",
+    "version": "0.9.9",
+    "author": "yourservice author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
         "javascript",
-        "yourapp keyword1",
-        "yourapp keyword2"
+        "yourservice keyword1",
+        "yourservice keyword2"
     ],
     "engines": {
         "node": "12"
@@ -17,14 +17,13 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "yourapp giturl"
+        "url": "yourservice giturl"
     },
     "scripts": {
         "build": "gulp build --options ./config/build.json",
         "build-full": "gulp build --full --options ./config/build.json",
         "build-quick": "gulp build --quick --options ./config/build.json",
         "test": "gulp test --TEST --options ./config/test.json",
-        "test-client": "gulp test --TEST --client --options ./config/test.json",
         "start-dev": "cd ./dist && NODE_ENV='development' node --inspect main.js",
         "stop-dev": "pkill -f node",
         "start": "cd ./dist && NODE_ENV='production' pm2 start main.js",
@@ -54,8 +53,6 @@
         "flairjs-fabric": "^0.9.20",
         "http-shutdown": "^1.2.1",
         "node-env-file": "^0.1.8",
-        "node-fetch": "^2.6.0",
-        "requirejs": "^2.3.6",
-        "vue": "^2.6.10"
+        "node-fetch": "^2.6.0"
     }
 }
