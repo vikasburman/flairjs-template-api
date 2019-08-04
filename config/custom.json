@@ -11,7 +11,6 @@
     ],
     "profiles": {
         "server": {
-            "root": "server",
             "dest": "/",
             "skipMinify": true,
             "build": [
