@@ -1,15 +1,15 @@
 {
-    "name": "yourservice",
-    "title": "yourservice name",
-    "description": "yourservice description",
-    "copyright": "yourservice copyright",
+    "name": "yourapi",
+    "title": "yourapi name",
+    "description": "yourapi description",
+    "copyright": "yourapi copyright",
     "version": "0.9.13",
-    "author": "yourservice author <yourapp@yourhost.domain>",
+    "author": "yourapi author <yourapi@yourhost.domain>",
     "keywords": [
         "flairjs",
         "javascript",
-        "yourservice keyword1",
-        "yourservice keyword2"
+        "yourapi keyword1",
+        "yourapi keyword2"
     ],
     "engines": {
         "node": ">=10"
@@ -17,7 +17,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "yourservice giturl"
+        "url": "yourapi giturl"
     },
     "scripts": {
         "build": "gulp build --options ./config/build.json",
