@@ -19,9 +19,9 @@
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [
+                "private",
                 "appConfig.json",
-                "main.js",
-                "private"
+                "main.js"
             ]
         }
     }
