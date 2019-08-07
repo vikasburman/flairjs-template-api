@@ -15,7 +15,7 @@
             "skipMinify": true,
             "build": [
                 "app",
-                "api"
+                "features"
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [

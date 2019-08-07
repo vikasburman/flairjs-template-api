@@ -25,6 +25,7 @@
         "build-quick": "gulp build --quick --options ./config/build.json",
         "test": "gulp test --TEST --options ./config/test.json",
         "serve": "cd ./dist && NODE_ENV='development' node --inspect main.js && pkill -f node",
+        "deploy": "cd ./dist && echo '** define deploy command **'",
         "start": "cd ./dist && NODE_ENV='production' pm2 start main.js",
         "stop": "pm2 stop main"
     },

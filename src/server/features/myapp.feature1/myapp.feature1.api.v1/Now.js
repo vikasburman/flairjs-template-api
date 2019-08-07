@@ -3,7 +3,7 @@ const Feature1 = ns('myapp.feature1');
 
 /**
  * @name Now
- * @description Now service
+ * @description Now endpoint
  */
 $$('ns', '(auto)');
 Class('(auto)', RESTEndPoint, function() {
