@@ -1,9 +1,9 @@
-[FlairJS Service Boilerplate](https://flairjs.com/templates/#/service)
+[FlairJS API Boilerplate](https://flairjs.com/templates/#/api)
 ---
 
-FlairJS Service Boilerplate is a development project structure to build [FlairJS](https://flairjs.com) service app using true object orientated features in plain vanilla JavaScript.
+FlairJS API Boilerplate is a development project structure to build [FlairJS](https://flairjs.com) api app using true object orientated features in plain vanilla JavaScript.
 
-It provides the optimized configuration settings for organizing and building FlairJS service app. Find more about this [here](https://flairjs.com/templates/#/service).
+It provides the optimized configuration settings for organizing and building FlairJS api app. Find more about this [here](https://flairjs.com/templates/#/service).
 
 
 
