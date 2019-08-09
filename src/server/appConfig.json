@@ -87,6 +87,7 @@
             ],          
             "api_v1-resHeaders": [
                 { "name": "X-Built-On", "value": "flairjs" },
+                { "name": "X-Api-Version", "value": "1" },                
                 { "name": "Access-Control-Allow-Origin", "value": "*" }                
             ]                         
         }

@@ -12,8 +12,9 @@
         "yourapi keyword2"
     ],
     "engines": {
-        "node": ">=10"
+        "node": "10"
     },
+    "main": "main.js",
     "license": "MIT",
     "repository": {
         "type": "git",
