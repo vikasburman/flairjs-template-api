@@ -14,7 +14,7 @@
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./api"
+                "./features"
             ],    
             "ports": {
             },       
@@ -38,7 +38,7 @@
             ],
             "preambles": [
                 "./app",
-                "./api"
+                "./features"
             ],            
             "bootwares": [
                 "flair.boot.DIContainer"

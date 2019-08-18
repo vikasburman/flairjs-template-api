@@ -3,7 +3,7 @@
     "title": "yourapi name",
     "description": "yourapi description",
     "copyright": "yourapi copyright",
-    "version": "0.9.18",
+    "version": "0.9.22",
     "author": "yourapi author <yourapi@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -25,9 +25,9 @@
         "build-full": "gulp build --full --options ./config/build.json",
         "build-quick": "gulp build --quick --options ./config/build.json",
         "test": "gulp test --TEST --options ./config/test.json",
-        "serve": "cd ./dist && NODE_ENV='development' node --inspect main.js && pkill -f node",
+        "serve": "cd ./dist && FLAIR_SYMBOLS='DEV,DEBUG' node --inspect main.js && pkill -f node",
         "deploy": "cd ./dist && echo '** define deploy command **'",
-        "start": "cd ./dist && NODE_ENV='production' pm2 start main.js",
+        "start": "cd ./dist && FLAIR_SYMBOLS='PROD' pm2 start main.js",
         "stop": "pm2 stop main"
     },
     "devDependencies": {
@@ -51,8 +51,8 @@
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "flairjs": "^0.55.30",
-        "flairjs-fabric": "^0.55.30",
+        "flairjs": "^0.55.51",
+        "flairjs-fabric": "^0.55.56",
         "http-shutdown": "^1.2.1",
         "node-env-file": "^0.1.8",
         "node-fetch": "^2.6.0"
