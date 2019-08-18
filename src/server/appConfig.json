@@ -1,9 +1,11 @@
 {
-    "flair": {
-        "api": {
-            "connections": {
-            }
-        }     
+    "global": {
+        "flair": {
+            "api": {
+                "connections": {
+                }
+            }     
+        }
     },
     
     "flair.app": {
