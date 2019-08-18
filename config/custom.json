@@ -4,7 +4,8 @@
         { "name": "node_modules", "file": "node_modules.js", "settings": { "cmd": "yarn install --prod" } },
         { "name": "web_modules", "file": "web_modules.js" },
         { "name": "copy_files", "file": "copy_files.js" },
-        { "name": "minify_files", "file": "minify_files.js" }
+        { "name": "minify_files", "file": "minify_files.js" },
+        { "name": "write_env", "file": "write_env.js" }        
     ],    
     "build": [
         { "profile": "server" }
@@ -17,12 +18,18 @@
                 "app",
                 "features"
             ],
-            "plugins": ["copy_files", "node_modules"],
+            "plugins": ["copy_files", "node_modules", "write_env"],
             "copy": [
                 "private",
                 "appConfig.json",
                 "main.js"
-            ]
+            ],
+            "env": {
+                "type": "server",
+                "vars": {
+                    "FLAIR_SYMBOLS": "DEV,DEBUG"
+                }
+            }            
         }
     }
 }
