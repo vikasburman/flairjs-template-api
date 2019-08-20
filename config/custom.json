@@ -5,7 +5,7 @@
         { "name": "web_modules", "file": "web_modules.js" },
         { "name": "copy_files", "file": "copy_files.js" },
         { "name": "minify_files", "file": "minify_files.js" },
-        { "name": "write_env", "file": "write_env.js" }        
+        { "name": "write_flags", "file": "write_flags.js", "settings": { "defaultFlag": "dev" } }
     ],    
     "build": [
         { "profile": "server" }
@@ -18,16 +18,18 @@
                 "app",
                 "features"
             ],
-            "plugins": ["copy_files", "node_modules", "write_env"],
+            "plugins": ["copy_files", "node_modules", "write_flags"],
             "copy": [
                 "private",
                 "appConfig.json",
                 "main.js"
             ],
-            "env": {
-                "type": "server",
-                "vars": {
+            "flags": {
+                "dev": {
                     "FLAIR_SYMBOLS": "DEV,DEBUG"
+                },
+                "prod": {
+                    "FLAIR_SYMBOLS": "PROD"
                 }
             }            
         }
