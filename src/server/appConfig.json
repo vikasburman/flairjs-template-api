@@ -34,8 +34,6 @@
     },
     "worker:flair.app": {
         "boot": {
-            "files": [
-            ],
             "preambles": [
                 "./app",
                 "./features"
