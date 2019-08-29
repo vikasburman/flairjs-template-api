@@ -38,7 +38,7 @@
         "stop": "pm2 stop main"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.86"
+        "flairjs-cli": "^0.55.87"
     },
     "dependencies": {
         "flairjs": "^0.55.73",
