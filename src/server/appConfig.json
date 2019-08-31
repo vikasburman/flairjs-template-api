@@ -70,31 +70,46 @@
                 "main": "/",
                 "api_v1": "/api/v1/"
             },
-            "main-settings": [
-                { "name": "case sensitive routing", "value": false },
-                { "name": "strict routing", "value": false }
-            ],
-            "main-middlewares": [
-            ],  
-            "main-interceptors": [
-            ],          
-            "main-resHeaders": [
-                { "name": "X-Built-On", "value": "flairjs" }
-            ],
-            "api_v1-settings": [
-                { "name": "case sensitive routing", "value": false },
-                { "name": "strict routing", "value": false }
-            ],
-            "api_v1-middlewares": [
-                { "name": "cors", "args": [{ "origin": true }] }
-            ],  
-            "api_v1-interceptors": [
-            ],          
-            "api_v1-resHeaders": [
-                { "name": "X-Built-On", "value": "flairjs" },
-                { "name": "X-Api-Version", "value": "1" },                
-                { "name": "Access-Control-Allow-Origin", "value": "*" }                
-            ]                         
+            "all": {
+                "before": {
+                    "settings": [
+                        { "name": "case sensitive routing", "value": false },
+                        { "name": "strict routing", "value": false }
+                    ],
+                    "middlewares": [
+                    ],  
+                    "interceptors": [
+                    ]
+                },
+                "after": {
+                    "resHeaders": [
+                        { "name": "X-Built-On", "value": "flairjs" }
+                    ]
+                }
+            },
+            "main": {
+                "settings": [
+                ],
+                "middlewares": [
+                ],  
+                "interceptors": [
+                ],
+                "resHeaders": [
+                ]                
+            },
+            "api_v1": {
+                "settings": [
+                ],                
+                "middlewares": [
+                    { "name": "cors", "args": [{ "origin": true }] }
+                ], 
+                "interceptors": [
+                ],                 
+                "resHeaders": [
+                    { "name": "X-Api-Version", "value": "1" },                
+                    { "name": "Access-Control-Allow-Origin", "value": "*" }                
+                ]                         
+            }
         }
     }
 
