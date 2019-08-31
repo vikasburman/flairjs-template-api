@@ -36,7 +36,6 @@
         "deploy": "cd ./dist && echo '** define deploy command **'",
         "start": "cd ./dist && pm2 start main.js",
         "stop": "pm2 stop main",
-        "refresh-quick": "yarn upgrade flairjs-cli flairjs flairjs-fabric flairjs-fabric-defaults",
         "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn remove flairjs-fabric-defaults && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric && yarn add flairjs-fabric-defaults"
     },
     "devDependencies": {

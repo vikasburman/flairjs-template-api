@@ -9,8 +9,9 @@
         "app": "myapp.main.App",
 
         "boot": {
-            "files": [
-            ],
+            "env": {
+                "isExpress": true
+            },            
             "preambles": [
                 "./app",
                 "./features"
