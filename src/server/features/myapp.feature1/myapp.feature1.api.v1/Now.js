@@ -1,5 +1,5 @@
-const RESTEndPoint = await include('flair.api.RESTEndPoint');
-const Feature1 = ns('myapp.feature1');
+const { RESTEndPoint } = await ns('flair.api');
+const { Feature1 } = await ns('myapp.feature1');
 
 /**
  * @name Now
