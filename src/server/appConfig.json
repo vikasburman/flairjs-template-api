@@ -79,11 +79,20 @@
                     "middlewares": [
                     ],  
                     "interceptors": [
-                    ]
+                    ],
+                    "resHeaders": [
+                    ]                    
                 },
                 "after": {
+                    "settings": [
+                    ],
+                    "middlewares": [
+                    ],  
+                    "interceptors": [
+                    ],                    
                     "resHeaders": [
-                        { "name": "X-Built-On", "value": "flairjs" }
+                        { "name": "X-Built-On", "value": "flairjs" },
+                        { "name": "Access-Control-Allow-Origin", "value": "*" }                
                     ]
                 }
             },
@@ -106,8 +115,7 @@
                 "interceptors": [
                 ],                 
                 "resHeaders": [
-                    { "name": "X-Api-Version", "value": "1" },                
-                    { "name": "Access-Control-Allow-Origin", "value": "*" }                
+                    { "name": "X-Api-Version", "value": "1" }              
                 ]                         
             }
         }
