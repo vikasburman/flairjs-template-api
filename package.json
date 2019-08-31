@@ -35,7 +35,9 @@
         "serve": "nodemon --watch ./src --delay 5 --exec 'yarn build-quick && cd ./dist && node --inspect main.js'",
         "deploy": "cd ./dist && echo '** define deploy command **'",
         "start": "cd ./dist && pm2 start main.js",
-        "stop": "pm2 stop main"
+        "stop": "pm2 stop main",
+        "refresh-quick": "yarn upgrade flairjs-cli flairjs flairjs-fabric flairjs-fabric-defaults",
+        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn remove flairjs-fabric-defaults && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric && yarn add flairjs-fabric-defaults"
     },
     "devDependencies": {
         "flairjs-cli": "^0.55.92",
