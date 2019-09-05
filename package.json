@@ -32,20 +32,21 @@
         "build-prod-quick": "flair build --options ./config/build/options.json --quick --flag prod",
         "flag": "flair flag --options ./config/build/options.json",
         "test": "flair test --options ./config/test/options.json",
-        "serve": "nodemon --watch ./src --delay 5 --exec 'yarn build-quick && cd ./dist && node --inspect main.js'",
+        "serve": "nodemon --watch ./src --delay 5 --ext js,css,html,json,png,jpg,gif,xml --exec 'yarn build-quick && cd ./dist && node --inspect main.js'",
         "deploy": "cd ./dist && echo '** define deploy command **'",
         "start": "cd ./dist && pm2 start main.js",
         "stop": "pm2 stop main",
-        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn remove flairjs-fabric-defaults && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric && yarn add flairjs-fabric-defaults"
+        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.92",
-        "nodemon": "^1.19.1"
+        "flairjs-cli": "^0.59.0",
+        "nodemon": "^1.19.2"
     },
     "dependencies": {
-        "flairjs": "^0.55.78",
-        "flairjs-fabric": "^0.55.86",
-        "flairjs-fabric-defaults": "^0.55.79",
-        "pm2": "^3.4.0"
+        "express": "^4.17.1",
+        "flairjs": "^0.59.0",
+        "flairjs-fabric": "^0.59.0",
+        "http-shutdown": "^1.2.1",
+        "pm2": "^3.5.1"
     }
 }
