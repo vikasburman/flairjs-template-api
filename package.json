@@ -3,7 +3,7 @@
     "title": "yourapi name",
     "description": "yourapi description",
     "copyright": "yourapi copyright",
-    "version": "0.9.38",
+    "version": "0.59.0",
     "author": "yourapi author <yourapi@yourhost.domain>",
     "keywords": [
         "flairjs",
