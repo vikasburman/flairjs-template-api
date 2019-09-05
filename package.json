@@ -3,7 +3,7 @@
     "title": "yourapi name",
     "description": "yourapi description",
     "copyright": "yourapi copyright",
-    "version": "0.9.35",
+    "version": "0.9.38",
     "author": "yourapi author <yourapi@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -43,6 +43,7 @@
         "nodemon": "^1.19.2"
     },
     "dependencies": {
+        "cors": "^2.8.5",
         "express": "^4.17.1",
         "flairjs": "^0.59.0",
         "flairjs-fabric": "^0.59.0",

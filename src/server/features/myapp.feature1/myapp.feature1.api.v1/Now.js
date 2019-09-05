@@ -1,5 +1,5 @@
 const { RESTEndPoint } = await ns('flair.api');
-const { Feature1 } = await ns('myapp.feature1');
+const CurrentTime = await include('myapp.feature1.CurrentTime');
 
 /**
  * @name Now
@@ -9,7 +9,7 @@ $$('ns', '(auto)');
 Class('(auto)', RESTEndPoint, function() {
     $$('override');
     this.onGet = async (base, req, res) => { // eslint-disable-line no-unused-vars
-        let curTime = new Feature1.CurrentTime();
+        let curTime = new CurrentTime();
         res.json({ now: curTime.getCurrentTime() });
         return true; // handled
     };    
