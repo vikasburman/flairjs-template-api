@@ -13,12 +13,12 @@
                         "app",
                         "features"
                     ],
-                    "plugins": ["copy_files", "node_modules", "write_flags"],
                     "copy": [
                         "private",
                         "appConfig.json",
                         "~/node_modules/flairjs-fabric/flair.server/main.js >> ./main.js"
                     ],
+                    "modules": true,
                     "flags": {
                         "dev": {
                             "FLAIR_SYMBOLS": "DEV,DEBUG"
