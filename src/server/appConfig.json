@@ -94,6 +94,7 @@
                     "interceptors": [
                     ],                    
                     "resHeaders": [
+                        { "name": "X-Api-Version", "value": "1" },
                         { "name": "X-Built-On", "value": "flairjs" }
                     ]
                 }
@@ -108,7 +109,7 @@
                 "resHeaders": [
                 ]                
             },
-            "api_v1": {
+            "api": {
                 "settings": [
                 ],                
                 "middlewares": [
@@ -117,7 +118,6 @@
                 "interceptors": [
                 ],                 
                 "resHeaders": [
-                    { "name": "X-Api-Version", "value": "1" },
                     { "name": "Access-Control-Allow-Origin", "value": "*" }                
                 ]                         
             }
