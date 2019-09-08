@@ -39,7 +39,6 @@
         "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.60.2",
         "nodemon": "^1.19.2"
     },
     "dependencies": {
