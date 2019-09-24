@@ -11,7 +11,7 @@
                     "skipMinify": true,
                     "build": [
                         "app",
-                        "features"
+                        "api"
                     ],
                     "copy": [
                         "private",

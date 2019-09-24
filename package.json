@@ -3,7 +3,7 @@
     "title": "yourapi name",
     "description": "yourapi description",
     "copyright": "yourapi copyright",
-    "version": "0.59.7",
+    "version": "0.59.20",
     "author": "yourapi author <yourapi@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -39,14 +39,14 @@
         "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.60.5",
+        "flairjs-cli": "^0.62.2",
         "nodemon": "^1.19.2"
     },
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "flairjs": "^0.59.38",
-        "flairjs-fabric": "^0.59.21",
+        "flairjs": "^0.59.66",
+        "flairjs-fabric": "^0.60.8",
         "http-shutdown": "^1.2.1",
         "pm2": "^3.5.1"
     }
